@@ -1,0 +1,186 @@
+body{
+    background-image: url(fondoDescarga.jpg);
+    background-repeat: no-repeat;
+    background-color: #000a02;
+}
+
+#pantalla__contenido{
+    /* background-color: antiquewhite; */
+    min-height: 90vh;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* DESCARGA */
+#contenido__descarga{
+    display: inline-block;
+    /* background-color: #0088ff; */
+    min-height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#botonDescargar{
+	text-align: center;
+    padding: 2%;
+    margin: 2%;
+    background-color:#2ecc71;
+    border: 3px solid transparent;
+    z-index: 100;
+    filter: grayscale(0.7);
+
+    /* ANIMACION */
+    animation-name:baseCespedMove ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+    transition: 0.5s;
+
+}
+
+#basecesped{
+    /* min-width: 50%; */
+    width: 30vw;
+    filter: none;
+    animation-name:baseCespedMove ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    z-index: 50;
+}
+/* #bascesped::before{
+    content: "";
+    height: 5vh;
+    width: 2vw;
+    background-color: #2ecc70;
+    position: absolute;
+    top: 20px;
+
+    !ALGO ASI, mejor haz el palo en photoshop
+    
+} */
+
+#botonDescargar a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#botonDescargar:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border: 3px solid #2ecc71;
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0 10px 10px #2ecc7044;
+    
+}
+
+#botonDescargar:hover > a{
+    filter: drop-shadow(0 0 10px #000);
+}
+
+
+
+
+/* INSTRUCCIONES */
+#contenido__instrucciones{
+    /* background-color: #ff9900; */
+    min-height:50vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+#imgInstrucciones{
+    width: 50vw;
+    animation-name:instruccionesCespedMove ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    z-index: 50;
+}
+#instrucciones__botones{
+    position: relative;
+    margin: 10vh 0;
+    /* background-color: #2ecc71; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+}
+
+.botones{
+	text-align: center;
+    padding:0;
+    margin: 5%;
+    background-color:#cc2e2e;
+    border: 3px solid transparent;
+    transition: 0.5s;
+    z-index: 100;
+    filter: grayscale(0.4);    
+}
+.botones a {
+    padding: 4%;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    /* background-color: #2ecc70; */
+}
+
+.botones:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border: 3px solid #2ecc71;
+    /* transform: scale(1.2) rotate(10deg); */
+    box-shadow: 0 10px 10px #2ecc7044;
+}
+.botones:active{
+    border:0;
+    border-bottom: 3px solid #2ecc71;
+}
+
+.botones:hover > a{
+    text-shadow: 0 0 10px #2ecc70;
+}
+
+
+/* ANIMACIONES */
+@keyframes baseCespedMove {
+    0%{
+        transform: translateY(0) ;
+        filter: drop-shadow(0 0 10px transparent) grayscale(0.7);
+    }
+    50%{
+        transform: translateY(10%) ;
+        filter: drop-shadow(0 -10px 10px #46ff3597) grayscale(0.7);
+    }
+    100%{
+        transform: translateY(0) ;
+        filter: drop-shadow(0 0 10px transparent) grayscale(0.7);
+    }
+}
+@keyframes instruccionesCespedMove {
+    0%{
+        transform: translateY(0) translateX(0)  rotate(-2deg);
+        
+    }
+    50%{
+        transform: translateY(5%) translateX(5%) rotate(7deg);
+    }
+    70%{
+        transform: translateY(10%) translateX(2%)rotate(5deg);
+
+    }
+    100%{
+        transform: translateY(0) translateX(0) rotate(-2deg) ;
+        
+    }
+}
+

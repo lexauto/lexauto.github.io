@@ -1,0 +1,135 @@
+
+
+
+/* !PRINCIPAL */
+#pantalla__contenido{
+    /* background-color: rgba(127, 255, 212, 0.479); */
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+}
+/* !AUTO FIT */
+/* Estira las columnas para llenar el espacio */
+/* !AUTO FILL */
+/* Crea columnas para llenar el espacio, si hay mas items 
+los pondrá en esas columnas, si no pues estarán vacías. */
+.pantalla__secciones{
+    /* padding: 2%; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* !primera sección */
+#primerSeccion{
+    /* background-color: antiquewhite; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#imgLogo{
+    /* background-color: #2c471e; */
+    width: 50%;
+}
+/* !segunda sección */
+#segundaSeccion{
+    /* background-color: aqua; */
+    margin: auto;
+    /* border-radius: 2%; */
+    /* padding: 5%; */
+}
+
+#titulo,#subtitulo{
+    margin: 2% 0;
+    font-size: 2.7rem;
+    color: #fff;
+    text-shadow: 0 0 10px yellow;
+}
+
+#subtitulo{
+    font-size: 1.5rem;
+}
+
+#informacion{
+    margin-top: 2%;
+    background-color: #ffffffb4;
+    padding: 5%;
+    /* border-radius: 2%; */
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* !FUNCIONALIDADES */
+#pantalla__funcionalidades{
+    /* //background-color: #fff; */
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    text-align: center;
+}
+
+.funcionalidades__secciones{
+    /* //background-color: #0099ff; */
+    margin: 10%;
+    /* padding: 2%; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    
+}
+#funcionalidades__contenedor{
+    display: grid;
+    /* max-height: max-content; */
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+}
+
+.secciones__imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* object-fit: cover; */
+}
+.secciones__info{
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+/* !CAPTURAS DE PANTALLA */
+#pantalla__muestra{
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    text-align: center;
+    padding: 5%;
+}
+#muestra__imagenes{
+    display: grid;
+    /* height: max-content; */
+    min-height: 50vh;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+}
+
+#muestra__imagenes img{
+    width: 100%;
+    /* background-color: #fff; */
+    height: 100%;
+    object-fit: cover;
+}
+.subtitulos{
+    padding: 5%;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+#muestra__info{
+    background-color: #fff;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 50px;
+}

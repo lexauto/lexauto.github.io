@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.seccion{
+    background-image: url("fondoIndex.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+body{
+    background-image: url("fondoIndex.jpg");
+    /* background-color: #607101; */
+    background-color: #2c471e;
+    background-repeat: no-repeat;
+}
+
+#pantalla{
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: max-content;
+}
+
+/* nav  */
+#barraNavegacion{
+    /* background-color: #0099ff; */
+    max-width: 100%;
+    min-height: 5vh;
+    max-height: max-content;
+    /* padding: 2% 10%; */
+
+}
+.barraNavegacionSecundaria{
+    background-color:#0077ff !important;
+}
+#barraNavegacion__lista{
+    width: 100%;
+    min-height: 100%;
+    /* max-height: max-content; */
+    padding: 2% 10%;
+    background-color:#cc00ff53;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align:center;
+
+}
+
+
+.secciones::marker{
+    color:transparent;
+}
+.secciones a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+
+.secciones a:hover{
+    text-shadow:0 0 10px  #000000;
+    text-decoration:2px solid underline;
+    
+}
+.secciones{
+    margin: 0.2%;
+    transition: 0.5s;
+    padding: 0.5%;
+    border:2px solid transparent;
+
+}
+.secciones:hover{
+    box-shadow:0 0 10px  #000000;
+    transform: scale(1.2);
+    border:2px solid #cc00ff8f;
+}
+
+/* FOOTER */
+#pieDePagina{
+    max-width: 100vw;
+    max-height: max-content;
+    padding: 2%;
+    background-color: #36363616;
+    text-align: center;
+    color: #fff;
+}
+#pieDePagina h3{
+    text-shadow: 0 0 10px #2ecc70;
+}
+
+#pieDePagina li::marker{
+    color: transparent;
+}
+
+#pieDePagina li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+#pieDePagina__list{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+
+/* MEDIA query's */
+@media (width <=600px) {
+    #basecesped,#imgInstrucciones{
+        /* min-width: 50%; */
+        width: 80vw;
+        
+    }
+    #botonDescargar{
+        padding: 5% 2%;
+    }
+    body{
+        background-color: #2c471e;
+    }
+    
+}

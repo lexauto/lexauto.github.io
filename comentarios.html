@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="todos.css">
+        <link rel="stylesheet" href="comentarios.css">
+        <!-- tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+        <style>
+            img{
+                width: 100%;
+            }
+        </style>
+        <title>lex auto</title>
+    </head>
+    <body>
+        <div id="pantalla">
+            <nav id="barraNavegacion">
+                <ul id="barraNavegacion__lista">
+                    <li class="secciones"><a href="index.html">inicio</a></li>
+                    <li class="secciones"><a href="descargar.html">descargar</a></li>
+                    <li class="secciones"><a href="nosotros.html">nosotros</a></li>
+                    <li class="secciones"><a href="comentarios.html">enviar correo</a></li>
+                
+                </ul>
+            </nav>
+
+            <div id="pantalla__contenido" class="seccion">
+                <img id="contenido__info" src="nubeComentarios.png">
+
+                <h1 id="subtitulo">FORMULARIO COMENTARIOS</h1>
+                <form action="https://formsubmit.co/61acf4645a725b961c8729e7f4aeb189" method="POST">
+                    <input type="text" name="Nombre" id="" placeholder="Nombre o alias o cualquier cosa para identificar tu comentario:>">
+                    <input type="text" name="subject" id="" placeholder="Motivo del comentario:">
+                    <textarea name="comments" id="" cols="20" rows="20" placeholder="Comentario (se lo mas explicito posible):"></textarea>
+                    <input id="formulario__enviar" type="submit" value="Enviar">
+
+                    <input type="hidden" name="_text" value="paginaPONLA O TE PEGO!">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <footer id="pieDePagina">
+            <h3>
+                El codigo esta abierto a cambios, repositorio en github pendiente.
+            </h3>
+            
+            <ul id="pieDePagina__list">
+                <!--// llénalo después o te pego -->
+                <li>-Gresia Z-</li>
+                <li>-Cota E-</li>
+                <li>-Chon A-</li>
+                <li>-Morquecho S-</li>
+            </ul>
+        </footer>
+    </body>
+</html>

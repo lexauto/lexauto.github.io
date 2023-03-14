@@ -1,0 +1,52 @@
+.seccion{
+    background-image: url("fondoNosotros.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+body{
+    background-image: url("fondoNosotros.jpg");
+    /* background-color: #607101; */
+    background-color: #100228;
+    background-repeat: no-repeat;
+}
+
+/* !TARJETA */
+#pantallaTarjeta{
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+}
+.tarjetas{
+    /* background-color: aliceblue; */
+    /* padding: 10%; */
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    justify-items: center;
+}
+.tarjetas__nombre{
+    align-self: flex-end;
+    color: aliceblue;
+}
+.tarjetas__imagen{
+    /* background-color: aqua; */
+    object-fit: contain;
+    align-self: center;
+    width: 100%;
+    align-self: flex-end;
+    /* background-color: #000; */
+    filter: drop-shadow(0 0 10px #000);
+
+}
+.tarjetas__descripcion{
+    margin: 2%;
+    /* background-color: #00000087; */
+    /* background-image: url('imagenes/14.png'); */
+    /* padding: 10%; */
+    align-self:flex-start;
+    color: aliceblue;
+    /* box-shadow: 0 0 10px #000; */
+    filter: drop-shadow(0 0 10px #000);
+}

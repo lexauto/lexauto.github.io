@@ -8,7 +8,10 @@
     max-width: 100%;
     padding: 2%;
     display: grid;
+    text-align: center;
+    
     grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+    justify-content: center;
 }
 /* !AUTO FIT */
 /* Estira las columnas para llenar el espacio */
@@ -20,6 +23,8 @@ los pondrá en esas columnas, si no pues estarán vacías. */
     text-align: center;
     display: flex;
     flex-direction: column;
+    max-width: 90%;
+    justify-content: center;
 }
 /* !primera sección */
 #primerSeccion{
@@ -73,23 +78,32 @@ los pondrá en esas columnas, si no pues estarán vacías. */
 
 .funcionalidades__secciones{
     /* //background-color: #0099ff; */
-    margin: 10%;
+    /* margin: 10%; */
     /* padding: 2%; */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
-    display: grid;
-    grid-template-rows: 1fr 0.5fr;
+    /* display: grid;
+    grid-template-rows: 1fr 0.5fr; */
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    padding: 5%;
+    
     
 }
 #funcionalidades__contenedor{
     display: grid;
     /* max-height: max-content; */
     grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .secciones__imagen{
     width: 100%;
+    background-color: #fff;
     height: 100%;
     object-fit: contain;
     /* object-fit: cover; */
@@ -97,7 +111,9 @@ los pondrá en esas columnas, si no pues estarán vacías. */
 .secciones__info{
     background-color: #fff;
     padding: 5%;
-    border-radius: 5%;
+    /* border-radius: 5%; */
+    max-width: 100%;
+    max-height: max-content;
 }
 
 /* !CAPTURAS DE PANTALLA */

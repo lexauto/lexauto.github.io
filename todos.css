@@ -84,7 +84,8 @@ body{
 
 /* FOOTER */
 #pieDePagina{
-    max-width: 100vw;
+ 
+    max-width: 90vw;
     max-height: max-content;
     padding: 2%;
     background-color: #36363616;

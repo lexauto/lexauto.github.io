@@ -88,6 +88,10 @@ body{
 
 
 /* INSTRUCCIONES */
+h2{
+    color: #fff;
+    margin: 2%;
+}
 #contenido__instrucciones{
     /* background-color: #ff9900; */
     min-height:50vh;
@@ -148,6 +152,61 @@ body{
 
 .botones:hover > a{
     text-shadow: 0 0 10px #2ecc70;
+}
+
+/* HISTORIAL */
+#historial{
+    /* background-color: #2ecc70; */
+    min-height: 40vh;
+    max-height: max-content;
+    width: 100%;
+    text-align: center;
+}
+#historial h1{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#historial__tarjetas{
+    
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+
+}
+.tarjetaHistorial{
+    margin: 2%;
+    box-shadow: 0 0 15px #2ecc70;
+    height: max-content;
+}
+.version{
+    background-color: #2ecc70;
+    padding: 2%;
+    font-size: 1.2rem;
+    color: #fff;
+
+}
+.lexDescripcion{
+    /* background-color:#cc2e2e; */
+    color: #fff;
+    padding: 2%;
+    min-height: 72%;
+    max-height: max-content;
+}
+.lexDescripcion ul{
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.lexDescripcion li{
+    padding-top: 5%;
+}
+.botonesDescargar{
+    width: 100%;
+    margin: 0;
+
+    min-height: 15%;
+    padding: 0%;
 }
 
 

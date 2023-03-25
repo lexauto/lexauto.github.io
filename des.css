@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-color: #000a02;
     max-width: 99vw;
+    overflow-x: hidden;
 }
 
 
@@ -256,7 +257,7 @@ h2{
 @media (width <=500px) {
     #basecesped{
         /* min-width: 50%; */
-        width: 80%;
+        min-width: 80%;
         
     }
     #botonDescargar{

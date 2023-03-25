@@ -253,7 +253,7 @@ h2{
 }
 
 
-@media (width <=600px) {
+@media (width <=500px) {
     #basecesped{
         /* min-width: 50%; */
         width: 80%;

@@ -120,7 +120,7 @@ body{
 @media (width <=600px) {
     #basecesped,#imgInstrucciones{
         /* min-width: 50%; */
-        width: 80vw;
+        width: 80%;
         
     }
     #botonDescargar{

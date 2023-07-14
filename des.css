@@ -8,7 +8,6 @@ body{
 
 
 #pantalla__contenido{
-    /* background-color: antiquewhite; */
     min-height: 90vh;
     max-width: 100%;
     text-align: center;
@@ -17,7 +16,6 @@ body{
 /* DESCARGA */
 #contenido__descarga{
     display: inline-block;
-    /* background-color: #0088ff; */
     min-height: 45vh;
     width: 100%;
     display: flex;
@@ -40,13 +38,10 @@ body{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-
     transition: 0.5s;
-
 }
 
 #basecesped{
-    /* min-width: 50%; */
     width: 30vw;
     filter: none;
     animation-name:baseCespedMove ;
@@ -55,18 +50,6 @@ body{
     animation-timing-function: ease-in;
     z-index: 50;
 }
-/* #bascesped::before{
-    content: "";
-    height: 5vh;
-    width: 2vw;
-    background-color: #2ecc70;
-    position: absolute;
-    top: 20px;
-
-    !ALGO ASI, mejor haz el palo en photoshop
-    
-} */
-
 #botonDescargar a {
     text-transform: uppercase;
     color: #fff;
@@ -79,8 +62,7 @@ body{
     cursor: pointer;
     border: 3px solid #2ecc71;
     transform: scale(1.2) rotate(10deg);
-    box-shadow: 0 10px 10px #2ecc7044;
-    
+    box-shadow: 0 10px 10px #2ecc7044;   
 }
 
 #botonDescargar:hover > a{
@@ -98,12 +80,10 @@ h2{
     text-align: center;
 }
 #contenido__instrucciones{
-    /* background-color: #ff9900; */
     min-height:50vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: first baseline; */
     align-items: left;
 }
 #imgInstrucciones{
@@ -118,7 +98,6 @@ h2{
 #instrucciones__botones{
     position: relative;
     margin: 10vh 0;
-    /* background-color: #2ecc71; */
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
@@ -142,14 +121,12 @@ h2{
     font-weight: bold;
     text-decoration: none;
     width: 100%;
-    /* background-color: #2ecc70; */
 }
 
 .botones:hover{
     background-color: transparent;
     cursor: pointer;
     border: 3px solid #2ecc71;
-    /* transform: scale(1.2) rotate(10deg); */
     box-shadow: 0 10px 10px #2ecc7044;
 }
 .botones:active{
@@ -163,7 +140,6 @@ h2{
 
 /* HISTORIAL */
 #historial{
-    /* background-color: #2ecc70; */
     min-height: 40vh;
     max-height: max-content;
     max-width: 100vw;
@@ -197,7 +173,6 @@ h2{
 
 }
 .lexDescripcion{
-    /* background-color:#cc2e2e; */
     color: #fff;
     padding: 2%;
     min-height: 72%;
@@ -214,7 +189,6 @@ h2{
 .botonesDescargar{
     width: 100%;
     margin: 0;
-
     min-height: 15%;
     padding: 0%;
 }
@@ -265,7 +239,5 @@ h2{
     }
     #contenido__instrucciones{
         align-items:center;
-    }
-    
-    
+    }   
 }
